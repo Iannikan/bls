@@ -1,5 +1,6 @@
 # TODO
-1. Improve styling of map
-2. render outline of USA/alaska/hawaii
-3. color areas based off of data from bls 
-4. see if i need to credit geojson creator
+- [ ] Improve styling of map
+- [ ] Create select list of industries 
+- [ ] show average compensation of industry in MSA
+- [ ] show % of people working in that industry in  MSA
+
