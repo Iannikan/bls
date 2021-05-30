@@ -1,12 +1,14 @@
 import React from 'react';
 import MyMap from './components/MyMap';
 import './App.css'
+import { ThemeProvider } from '@emotion/react';
+import theme from './Theme';
 
 function App() {
   return (
-    <div className="App">
-      <MyMap/>
-    </div>
+    <ThemeProvider theme={theme}>
+        <MyMap />
+    </ThemeProvider>
   );
 }
 
