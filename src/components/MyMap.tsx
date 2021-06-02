@@ -25,14 +25,15 @@ const MyMap = () => {
 
   const theme = useTheme();
   const mapContainerStyle = css({
-    maxWidth: '700px',
+    maxWidth: '1400px',
     maxHeight: '700px',
     borderRadius: theme.borderRadius,
   })
+  const center : LatLngExpression = [45.505, -87.09];
 
   console.log(regions);
   return (
-    <MapContainer center={[45.505, -87.09]} zoom={5} scrollWheelZoom={false} css={mapContainerStyle}>
+    <MapContainer center={center} zoom={5} scrollWheelZoom={false} css={mapContainerStyle}>
       <TileLayer
         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
